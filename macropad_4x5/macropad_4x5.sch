@@ -637,13 +637,13 @@ Text GLabel 3450 4200 0    50   Input ~ 0
 row3
 Text GLabel 3450 4950 0    50   Input ~ 0
 row4
-Text GLabel 2100 3400 2    50   Input ~ 0
-col0
-Text GLabel 2100 3300 2    50   Input ~ 0
-col1
-Text GLabel 2100 3200 2    50   Input ~ 0
-col2
 Text GLabel 2100 3100 2    50   Input ~ 0
+col0
+Text GLabel 2100 3200 2    50   Input ~ 0
+col1
+Text GLabel 2100 3400 2    50   Input ~ 0
+col2
+Text GLabel 2100 3300 2    50   Input ~ 0
 col3
 Text GLabel 1200 3100 0    50   Input ~ 0
 row0
