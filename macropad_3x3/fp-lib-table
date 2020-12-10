@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name MX_Only)(type KiCad)(uri D:/Documents/personal_pcbs/MX_Alps_Hybrid.pretty/MX_Only.pretty)(options "")(descr ""))
+  (lib (name Boards)(type KiCad)(uri D:/Documents/personal_pcbs/SparkFun-KiCad-Libraries/Footprints/Boards.pretty)(options "")(descr ""))
+  (lib (name random-keyboard-parts)(type KiCad)(uri D:/Documents/personal_pcbs/random-keyboard-parts.pretty)(options "")(descr ""))
+  (lib (name MX_Alps_Hybrid)(type KiCad)(uri D:/Documents/personal_pcbs/MX_Alps_Hybrid.pretty)(options "")(descr ""))
+  (lib (name Keebio-Parts)(type KiCad)(uri D:/Documents/personal_pcbs/Keebio-Parts.pretty)(options "")(descr ""))
+)
