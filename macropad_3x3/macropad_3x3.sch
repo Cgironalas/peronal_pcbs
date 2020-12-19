@@ -583,14 +583,6 @@ F 3 "~" H 6950 4850 50  0001 C CNN
 	1    6950 4850
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4250 2000 4250 2700
-Connection ~ 4250 2700
-Wire Wire Line
-	6450 2000 6450 2150
-Wire Wire Line
-	6250 2000 6250 2700
-Connection ~ 6250 2700
 $Comp
 L power:VCC #PWR0111
 U 1 1 5FE0CB99
@@ -786,8 +778,6 @@ Wire Wire Line
 Connection ~ 5850 3450
 Connection ~ 4850 2450
 Wire Wire Line
-	6850 2100 6850 2150
-Wire Wire Line
 	6700 3450 6850 3450
 Wire Wire Line
 	6700 2450 6700 2500
@@ -796,11 +786,6 @@ Wire Wire Line
 Wire Wire Line
 	6850 2450 6850 3450
 Connection ~ 6850 2450
-Connection ~ 6850 2150
-Wire Wire Line
-	6850 2150 6850 2450
-Wire Wire Line
-	6450 2150 6850 2150
 Wire Wire Line
 	7200 2100 7200 2200
 Wire Wire Line
@@ -876,15 +861,6 @@ Wire Wire Line
 Connection ~ 5250 3000
 Wire Wire Line
 	5250 3000 6250 3000
-Wire Wire Line
-	4450 2000 4450 2200
-Wire Wire Line
-	4850 2200 4850 2450
-Wire Wire Line
-	4850 2150 4850 2200
-Connection ~ 4850 2200
-Wire Wire Line
-	4850 2200 4450 2200
 Wire Wire Line
 	4250 4000 5250 4000
 Wire Wire Line
@@ -976,4 +952,36 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2950 4350 50  000
 	1    2950 4350
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4850 2150 4850 2250
+Wire Wire Line
+	4250 2000 4250 2250
+Wire Wire Line
+	4250 2250 4850 2250
+Connection ~ 4850 2250
+Wire Wire Line
+	4850 2250 4850 2450
+Wire Wire Line
+	4450 2000 4450 2350
+Wire Wire Line
+	4450 2350 4250 2350
+Wire Wire Line
+	4250 2350 4250 2700
+Connection ~ 4250 2700
+Wire Wire Line
+	6850 2100 6850 2250
+Wire Wire Line
+	6250 2000 6250 2250
+Wire Wire Line
+	6250 2250 6850 2250
+Connection ~ 6850 2250
+Wire Wire Line
+	6850 2250 6850 2450
+Wire Wire Line
+	6450 2000 6450 2350
+Wire Wire Line
+	6450 2350 6250 2350
+Wire Wire Line
+	6250 2350 6250 2700
+Connection ~ 6250 2700
 $EndSCHEMATC
