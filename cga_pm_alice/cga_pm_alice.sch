@@ -19,7 +19,7 @@ U 1 1 5FE7C858
 P 9150 1700
 F 0 "PM1" H 9150 2537 60  0000 C CNN
 F 1 "ProMicro" H 9150 2431 60  0000 C CNN
-F 2 "Keebio-Parts:ArduinoProMicro" V 10200 -800 60  0001 C CNN
+F 2 "Keebio-Parts:ArduinoProMicro-ZigZag" V 10200 -800 60  0001 C CNN
 F 3 "" V 10200 -800 60  0001 C CNN
 	1    9150 1700
 	1    0    0    -1  
