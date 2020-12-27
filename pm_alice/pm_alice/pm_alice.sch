@@ -678,10 +678,10 @@ Wire Wire Line
 	5900 1550 5050 1550
 Connection ~ 5050 1550
 $Comp
-L Device:R_Small d49
+L Device:R_Small r49
 U 1 1 60034B02
 P 6350 1350
-F 0 "d49" H 6409 1396 50  0000 L CNN
+F 0 "r49" H 6409 1396 50  0000 L CNN
 F 1 "4.7k" H 6409 1305 50  0000 L CNN
 F 2 "Keebio-Parts:Resistor-Hybrid" H 6350 1350 50  0001 C CNN
 F 3 "~" H 6350 1350 50  0001 C CNN
