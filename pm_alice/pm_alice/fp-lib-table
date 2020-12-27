@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Keebio-Parts)(type KiCad)(uri D:/Documents/personal_pcbs/Keebio-Parts.pretty)(options "")(descr ""))
+  (lib (name random-keyboard-parts)(type KiCad)(uri D:/Documents/personal_pcbs/random-keyboard-parts.pretty)(options "")(descr ""))
+)
