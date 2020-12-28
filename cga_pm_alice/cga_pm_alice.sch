@@ -91,19 +91,19 @@ col3
 Text GLabel 9850 2050 2    50   Input ~ 0
 row3
 Text GLabel 8450 1650 0    50   Input ~ 0
-col4
+col7
 Text GLabel 8450 1750 0    50   Input ~ 0
-row4
+col6
 Text GLabel 8450 1850 0    50   Input ~ 0
 col5
 Text GLabel 8450 1950 0    50   Input ~ 0
 row5
 Text GLabel 8450 2050 0    50   Input ~ 0
-col6
+row4
 Text GLabel 8450 2150 0    50   Input ~ 0
 row6
 Text GLabel 8450 2250 0    50   Input ~ 0
-col7
+col4
 Text GLabel 9850 2150 2    50   Input ~ 0
 row7
 $Comp
