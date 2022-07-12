@@ -506,7 +506,7 @@ F 3 "" H 3475 1575 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 4550 4250 3800
+	4250 4550 4250 4300
 Wire Wire Line
 	4250 3800 4250 3050
 Connection ~ 4250 3800
@@ -611,7 +611,7 @@ Wire Wire Line
 	3900 4950 3450 4950
 Connection ~ 4900 4950
 Wire Wire Line
-	4900 4950 3900 4950
+	4900 4950 4350 4950
 Connection ~ 5900 4950
 Wire Wire Line
 	5900 4950 4900 4950
@@ -659,4 +659,27 @@ Text GLabel 2100 2700 2    50   Input ~ 0
 RAW
 Text GLabel 1200 2700 0    50   Input ~ 0
 TXO
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX21
+U 1 1 5FDEFDC1
+P 4400 4600
+F 0 "MX21" H 4433 4823 60  0000 C CNN
+F 1 "MX-NoLED" H 4433 4749 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-2U-ReversedStabilizers-NoLED" H 3775 4575 60  0001 C CNN
+F 3 "" H 3775 4575 60  0001 C CNN
+	1    4400 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4300 4550 4300
+Wire Wire Line
+	4550 4300 4550 4550
+Connection ~ 4250 4300
+Wire Wire Line
+	4250 4300 4250 3800
+Wire Wire Line
+	4350 4750 4350 4950
+Connection ~ 4350 4950
+Wire Wire Line
+	4350 4950 3900 4950
 $EndSCHEMATC
