@@ -1,0 +1,1303 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0101
+U 1 1 608F6EF1
+P 2300 950
+F 0 "#PWR0101" H 2300 700 50  0001 C CNN
+F 1 "GND" V 2300 800 50  0000 R CNN
+F 2 "" H 2300 950 50  0001 C CNN
+F 3 "" H 2300 950 50  0001 C CNN
+	1    2300 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 608F7A62
+P 2300 1150
+F 0 "#PWR0102" H 2300 1000 50  0001 C CNN
+F 1 "VCC" V 2300 1300 50  0000 L CNN
+F 2 "" H 2300 1150 50  0001 C CNN
+F 3 "" H 2300 1150 50  0001 C CNN
+	1    2300 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 608F8985
+P 1250 3500
+F 0 "#PWR0103" H 1250 3250 50  0001 C CNN
+F 1 "GND" H 1255 3327 50  0000 C CNN
+F 2 "" H 1250 3500 50  0001 C CNN
+F 3 "" H 1250 3500 50  0001 C CNN
+	1    1250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push Reset1
+U 1 1 608FA808
+P 1050 3500
+F 0 "Reset1" H 1050 3785 50  0000 C CNN
+F 1 "SW_Push" H 1050 3694 50  0000 C CNN
+F 2 "Keebio-Parts:SW_Two_sided" H 1050 3700 50  0001 C CNN
+F 3 "~" H 1050 3700 50  0001 C CNN
+	1    1050 3500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2300 850 
+$Comp
+L power:GND #PWR0104
+U 1 1 608FB1F7
+P 900 1050
+F 0 "#PWR0104" H 900 800 50  0001 C CNN
+F 1 "GND" V 905 922 50  0000 R CNN
+F 2 "" H 900 1050 50  0001 C CNN
+F 3 "" H 900 1050 50  0001 C CNN
+	1    900  1050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 608FB8FA
+P 900 1150
+F 0 "#PWR0105" H 900 900 50  0001 C CNN
+F 1 "GND" V 905 1022 50  0000 R CNN
+F 2 "" H 900 1150 50  0001 C CNN
+F 3 "" H 900 1150 50  0001 C CNN
+	1    900  1150
+	0    1    1    0   
+$EndComp
+Text GLabel 900  850  0    50   Input ~ 0
+TX
+Text GLabel 900  950  0    50   Input ~ 0
+RX
+Text GLabel 900  1450 0    50   Input ~ 0
+col0
+Text GLabel 900  1350 0    50   Input ~ 0
+col1
+Text GLabel 900  1250 0    50   Input ~ 0
+col2
+Text GLabel 2300 1250 2    50   Input ~ 0
+col3
+Text GLabel 2300 1350 2    50   Input ~ 0
+col4
+Text GLabel 2300 1450 2    50   Input ~ 0
+col5
+Text GLabel 900  1550 0    50   Input ~ 0
+row0
+Text GLabel 900  1650 0    50   Input ~ 0
+row1
+Text GLabel 900  1750 0    50   Input ~ 0
+row2
+Text GLabel 900  1850 0    50   Input ~ 0
+row3
+Text GLabel 900  1950 0    50   Input ~ 0
+row4
+Text GLabel 2300 1550 2    50   Input ~ 0
+col6
+Text GLabel 2300 1650 2    50   Input ~ 0
+col7
+$Comp
+L Transistor_FET:2N7002 Q1
+U 1 1 60903875
+P 2850 6300
+F 0 "Q1" H 3054 6346 50  0000 L CNN
+F 1 "2N7002" H 3054 6255 50  0000 L CNN
+F 2 "Keebio-Parts:SOT-23_Handsoldering" H 3050 6225 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 2850 6300 50  0001 L CNN
+	1    2850 6300
+	1    0    0    -1  
+$EndComp
+Text GLabel 3000 6050 2    50   Input ~ 0
+LEDsOut
+$Comp
+L power:GND #PWR0106
+U 1 1 609063C3
+P 2950 6500
+F 0 "#PWR0106" H 2950 6250 50  0001 C CNN
+F 1 "GND" H 2955 6327 50  0000 C CNN
+F 2 "" H 2950 6500 50  0001 C CNN
+F 3 "" H 2950 6500 50  0001 C CNN
+	1    2950 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6100 2950 6050
+Wire Wire Line
+	2950 6050 3000 6050
+Text GLabel 2250 6850 0    50   Input ~ 0
+LEDs
+$Comp
+L Device:R_Small RQ1
+U 1 1 6090763F
+P 2300 6950
+F 0 "RQ1" H 2359 6996 50  0000 L CNN
+F 1 "4.7k" H 2359 6905 50  0000 L CNN
+F 2 "Keebio-Parts:Resistor-2-sided" H 2300 6950 50  0001 C CNN
+F 3 "~" H 2300 6950 50  0001 C CNN
+	1    2300 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 6090B414
+P 2300 7050
+F 0 "#PWR0107" H 2300 6800 50  0001 C CNN
+F 1 "GND" H 2305 6877 50  0000 C CNN
+F 2 "" H 2300 7050 50  0001 C CNN
+F 3 "" H 2300 7050 50  0001 C CNN
+	1    2300 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 6850 2300 6850
+Connection ~ 2300 6850
+Text GLabel 800  3950 0    50   Input ~ 0
+TRRS1
+Text GLabel 800  4050 0    50   Input ~ 0
+TRRS2
+$Comp
+L power:GND #PWR0108
+U 1 1 60A7DE85
+P 1150 4150
+F 0 "#PWR0108" H 1150 3900 50  0001 C CNN
+F 1 "GND" H 1155 3977 50  0000 C CNN
+F 2 "" H 1150 4150 50  0001 C CNN
+F 3 "" H 1150 4150 50  0001 C CNN
+	1    1150 4150
+	0    1    1    0   
+$EndComp
+Text GLabel 2300 1050 2    50   Input ~ 0
+RESET
+Text GLabel 850  3500 0    50   Input ~ 0
+RESET
+$Comp
+L cga_proto_boards-rescue:OLED-keebio O2
+U 1 1 60AAD199
+P 1350 7200
+F 0 "O2" H 1578 7503 60  0000 L CNN
+F 1 "OLED" H 1578 7397 60  0000 L CNN
+F 2 "Keebio-Parts:Header-4-Pin" H 1500 7200 60  0001 C CNN
+F 3 "" H 1500 7200 60  0001 C CNN
+	1    1350 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L cga_proto_boards-rescue:OLED-keebio O1
+U 1 1 60AB2268
+P 1350 6650
+F 0 "O1" H 1578 6953 60  0000 L CNN
+F 1 "OLED" H 1578 6847 60  0000 L CNN
+F 2 "Keebio-Parts:Header-4-Pin" H 1500 6650 60  0001 C CNN
+F 3 "" H 1500 6650 60  0001 C CNN
+	1    1350 6650
+	1    0    0    -1  
+$EndComp
+Text GLabel 750  6850 0    50   Input ~ 0
+SDA
+Text GLabel 750  6700 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	1000 6350 950  6350
+Wire Wire Line
+	1000 6250 900  6250
+$Comp
+L power:VCC #PWR0111
+U 1 1 60AB60CB
+P 1100 7450
+F 0 "#PWR0111" H 1100 7300 50  0001 C CNN
+F 1 "VCC" H 1115 7623 50  0000 C CNN
+F 2 "" H 1100 7450 50  0001 C CNN
+F 3 "" H 1100 7450 50  0001 C CNN
+	1    1100 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 60AB5592
+P 900 7500
+F 0 "#PWR0112" H 900 7250 50  0001 C CNN
+F 1 "GND" H 905 7327 50  0000 C CNN
+F 2 "" H 900 7500 50  0001 C CNN
+F 3 "" H 900 7500 50  0001 C CNN
+	1    900  7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 6900 950  6900
+Wire Wire Line
+	950  6900 950  7500
+Wire Wire Line
+	950  7500 1100 7500
+Wire Wire Line
+	1100 7500 1100 7450
+Wire Wire Line
+	950  6350 950  6900
+Connection ~ 950  6900
+Wire Wire Line
+	900  6250 900  6800
+Wire Wire Line
+	1000 6800 900  6800
+Connection ~ 900  6800
+Wire Wire Line
+	900  6800 900  7500
+Wire Wire Line
+	1000 6450 800  6450
+Wire Wire Line
+	800  6450 800  6700
+Wire Wire Line
+	800  6700 750  6700
+Wire Wire Line
+	1000 7000 800  7000
+Wire Wire Line
+	800  7000 800  6700
+Connection ~ 800  6700
+Wire Wire Line
+	850  7100 1000 7100
+Wire Wire Line
+	1000 6550 850  6550
+Wire Wire Line
+	850  6550 850  6850
+Wire Wire Line
+	850  6850 750  6850
+Connection ~ 850  6850
+Wire Wire Line
+	850  6850 850  7100
+$Comp
+L cga_proto_boards-rescue:Elite-C_side-keebio Cs1
+U 1 1 60B34BA1
+P 3750 1200
+F 0 "Cs1" H 3500 1750 60  0000 L CNN
+F 1 "Elite-C_left" V 3600 1000 60  0000 L CNN
+F 2 "Keebio-Parts:Header-12-Pin-ZigZag-Square" V 4800 -1300 60  0001 C CNN
+F 3 "" V 4800 -1300 60  0001 C CNN
+	1    3750 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 60B36BA0
+P 3050 850
+F 0 "#PWR0110" H 3050 600 50  0001 C CNN
+F 1 "GND" V 3055 722 50  0000 R CNN
+F 2 "" H 3050 850 50  0001 C CNN
+F 3 "" H 3050 850 50  0001 C CNN
+	1    3050 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 60B36BAA
+P 3050 950
+F 0 "#PWR0113" H 3050 700 50  0001 C CNN
+F 1 "GND" V 3055 822 50  0000 R CNN
+F 2 "" H 3050 950 50  0001 C CNN
+F 3 "" H 3050 950 50  0001 C CNN
+	1    3050 950 
+	0    1    1    0   
+$EndComp
+Text GLabel 3050 650  0    50   Input ~ 0
+TX
+Text GLabel 3050 750  0    50   Input ~ 0
+RX
+$Comp
+L power:GND #PWR0114
+U 1 1 60B5F507
+P 4450 750
+F 0 "#PWR0114" H 4450 500 50  0001 C CNN
+F 1 "GND" V 4450 600 50  0000 R CNN
+F 2 "" H 4450 750 50  0001 C CNN
+F 3 "" H 4450 750 50  0001 C CNN
+	1    4450 750 
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0115
+U 1 1 60B5F79B
+P 4450 950
+F 0 "#PWR0115" H 4450 800 50  0001 C CNN
+F 1 "VCC" V 4450 1100 50  0000 L CNN
+F 2 "" H 4450 950 50  0001 C CNN
+F 3 "" H 4450 950 50  0001 C CNN
+	1    4450 950 
+	0    1    -1   0   
+$EndComp
+Text GLabel 4450 850  2    50   Input ~ 0
+RESET
+NoConn ~ 4450 650 
+$Comp
+L cga_proto_boards-rescue:Elite-C_bottom-keebio Cb1
+U 1 1 60B67ECE
+P 5650 5950
+F 0 "Cb1" H 5200 5500 60  0000 L CNN
+F 1 "Elite-C_bottom" H 5400 5500 60  0000 L CNN
+F 2 "Keebio-Parts:Header-5-Pin-ZigZag" V 6700 3450 60  0001 C CNN
+F 3 "" V 6700 3450 60  0001 C CNN
+	1    5650 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L cga_proto_boards-rescue:Elite-C_side-keebio Cs2
+U 1 1 60B5D5B4
+P 3750 1200
+F 0 "Cs2" H 3500 1750 60  0000 L CNN
+F 1 "Elite-C_right" V 3600 1000 60  0000 L CNN
+F 2 "Keebio-Parts:Header-12-Pin-ZigZag-Square" V 4800 -1300 60  0001 C CNN
+F 3 "" V 4800 -1300 60  0001 C CNN
+	1    3750 1200
+	-1   0    0    -1  
+$EndComp
+Text GLabel 5550 6900 3    50   Input ~ 0
+encoder1a
+Text GLabel 5650 6900 3    50   Input ~ 0
+encoder1b
+Text GLabel 5750 6900 3    50   Input ~ 0
+encoder2a
+Text GLabel 5850 6900 3    50   Input ~ 0
+encoder2b
+Text GLabel 5450 6900 3    50   Input ~ 0
+LEDs
+$Comp
+L Transistor_FET:2N7002 Q2
+U 1 1 60AD36D3
+P 2900 7150
+F 0 "Q2" H 3104 7196 50  0000 L CNN
+F 1 "2N7002" H 3104 7105 50  0000 L CNN
+F 2 "Keebio-Parts:SOT-23_Handsoldering" H 3100 7075 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 2900 7150 50  0001 L CNN
+	1    2900 7150
+	1    0    0    -1  
+$EndComp
+Text GLabel 3050 6900 2    50   Input ~ 0
+LEDsOut
+$Comp
+L power:GND #PWR0116
+U 1 1 60AD3A36
+P 3000 7350
+F 0 "#PWR0116" H 3000 7100 50  0001 C CNN
+F 1 "GND" H 3005 7177 50  0000 C CNN
+F 2 "" H 3000 7350 50  0001 C CNN
+F 3 "" H 3000 7350 50  0001 C CNN
+	1    3000 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 6950 3000 6900
+Wire Wire Line
+	3000 6900 3050 6900
+Wire Wire Line
+	2550 6850 2550 6300
+Wire Wire Line
+	2550 6300 2650 6300
+Wire Wire Line
+	2300 6850 2550 6850
+Wire Wire Line
+	2550 6850 2550 7150
+Wire Wire Line
+	2550 7150 2700 7150
+Connection ~ 2550 6850
+$Comp
+L Device:R_Small RT1
+U 1 1 60AC97AD
+P 1000 4300
+F 0 "RT1" H 1059 4346 50  0000 L CNN
+F 1 "4.7k" H 1059 4255 50  0000 L CNN
+F 2 "Keebio-Parts:Resistor-2-sided" H 1000 4300 50  0001 C CNN
+F 3 "~" H 1000 4300 50  0001 C CNN
+	1    1000 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	900  4600 850  4600
+Connection ~ 1100 4600
+Wire Wire Line
+	1100 4600 1100 4650
+$Comp
+L Device:R_Small RT2
+U 1 1 60ACFAD7
+P 1000 4600
+F 0 "RT2" H 1059 4646 50  0000 L CNN
+F 1 "4.7k" H 1059 4555 50  0000 L CNN
+F 2 "Keebio-Parts:Resistor-2-sided" H 1000 4600 50  0001 C CNN
+F 3 "~" H 1000 4600 50  0001 C CNN
+	1    1000 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 4300 1100 4600
+$Comp
+L power:VCC #PWR0109
+U 1 1 60A7DE8F
+P 1250 4550
+F 0 "#PWR0109" H 1250 4400 50  0001 C CNN
+F 1 "VCC" H 1265 4723 50  0000 C CNN
+F 2 "" H 1250 4550 50  0001 C CNN
+F 3 "" H 1250 4550 50  0001 C CNN
+	1    1250 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 4550 1250 4650
+Wire Wire Line
+	1250 4650 1100 4650
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 60AF8E02
+P 4000 6550
+F 0 "H1" V 4237 6553 50  0000 C CNN
+F 1 "LEDs" V 4146 6553 50  0000 C CNN
+F 2 "Keebio-Parts:SinglePad" H 4000 6550 50  0001 C CNN
+F 3 "~" H 4000 6550 50  0001 C CNN
+	1    4000 6550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4100 6550 2    50   Input ~ 0
+LEDsOut
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 60AFF77D
+P 4000 6950
+F 0 "H2" V 4237 6953 50  0000 C CNN
+F 1 "GND" V 4146 6953 50  0000 C CNN
+F 2 "Keebio-Parts:SinglePad" H 4000 6950 50  0001 C CNN
+F 3 "~" H 4000 6950 50  0001 C CNN
+	1    4000 6950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 60B00090
+P 4100 6950
+F 0 "#PWR0118" H 4100 6700 50  0001 C CNN
+F 1 "GND" H 4105 6777 50  0000 C CNN
+F 2 "" H 4100 6950 50  0001 C CNN
+F 3 "" H 4100 6950 50  0001 C CNN
+	1    4100 6950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 60B01354
+P 4000 7350
+F 0 "H3" V 4237 7353 50  0000 C CNN
+F 1 "VCC" V 4146 7353 50  0000 C CNN
+F 2 "Keebio-Parts:SinglePad" H 4000 7350 50  0001 C CNN
+F 3 "~" H 4000 7350 50  0001 C CNN
+	1    4000 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0119
+U 1 1 60B01691
+P 4100 7350
+F 0 "#PWR0119" H 4100 7200 50  0001 C CNN
+F 1 "VCC" H 4115 7523 50  0000 C CNN
+F 2 "" H 4100 7350 50  0001 C CNN
+F 3 "" H 4100 7350 50  0001 C CNN
+	1    4100 7350
+	0    1    1    0   
+$EndComp
+Text GLabel 1300 5300 2    50   Input ~ 0
+TRRS1
+Text GLabel 2800 5300 2    50   Input ~ 0
+TRRS2
+Text GLabel 2200 5400 0    50   Input ~ 0
+TX
+Text GLabel 700  5400 0    50   Input ~ 0
+RX
+$Comp
+L cga_proto_boards-rescue:TRRS-keebio T1
+U 1 1 60AAFF47
+P 1500 4350
+F 0 "T1" H 1728 4653 60  0000 L CNN
+F 1 "TRRS" H 1728 4547 60  0000 L CNN
+F 2 "Keebio-Parts:TRRS-PJ-320A-dual" H 1650 4350 60  0001 C CNN
+F 3 "" H 1650 4350 60  0001 C CNN
+	1    1500 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  4050 900  4050
+Wire Wire Line
+	800  3950 850  3950
+Wire Wire Line
+	1150 4250 1100 4250
+Wire Wire Line
+	1100 4250 1100 4300
+Connection ~ 1100 4300
+Wire Wire Line
+	850  4600 850  3950
+Connection ~ 850  3950
+Wire Wire Line
+	850  3950 1150 3950
+Wire Wire Line
+	900  4300 900  4050
+Connection ~ 900  4050
+Wire Wire Line
+	900  4050 1150 4050
+$Comp
+L cga_proto_boards_top-rescue:3_way_jumper-keebio J1
+U 1 1 62CE5A73
+P 1000 5300
+F 0 "J1" H 1000 5625 50  0000 C CNN
+F 1 "3_way_jumper" H 1000 5534 50  0000 C CNN
+F 2 "" H 1000 5250 50  0001 C CNN
+F 3 "" H 1000 5250 50  0001 C CNN
+	1    1000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L cga_proto_boards_top-rescue:3_way_jumper-keebio J2
+U 1 1 62CEA8B8
+P 2500 5300
+F 0 "J2" H 2500 5625 50  0000 C CNN
+F 1 "3_way_jumper" H 2500 5534 50  0000 C CNN
+F 2 "" H 2500 5250 50  0001 C CNN
+F 3 "" H 2500 5250 50  0001 C CNN
+	1    2500 5300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2200 5200
+NoConn ~ 700  5200
+$Comp
+L keebio:Elite-C U1
+U 1 1 60AAE0C3
+P 1600 1400
+F 0 "U1" H 1600 2237 60  0000 C CNN
+F 1 "Elite-C" H 1600 2131 60  0000 C CNN
+F 2 "Keebio-Parts:Elite-C-ZigZag" V 2650 -1100 60  0001 C CNN
+F 3 "" V 2650 -1100 60  0001 C CNN
+	1    1600 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1500 2350 3    50   Input ~ 0
+encoder1a
+Text GLabel 1600 2350 3    50   Input ~ 0
+encoder1b
+Text GLabel 1700 2350 3    50   Input ~ 0
+encoder2a
+Text GLabel 1800 2350 3    50   Input ~ 0
+encoder2b
+Text GLabel 1400 2350 3    50   Input ~ 0
+LEDs
+Text GLabel 2300 1750 2    50   Input ~ 0
+col8
+Text GLabel 4450 1050 2    50   Input ~ 0
+col3
+Text GLabel 4450 1150 2    50   Input ~ 0
+col4
+Text GLabel 4450 1250 2    50   Input ~ 0
+col5
+Text GLabel 4450 1350 2    50   Input ~ 0
+col6
+Text GLabel 4450 1450 2    50   Input ~ 0
+col7
+Text GLabel 4450 1550 2    50   Input ~ 0
+col8
+Text GLabel 3050 1250 0    50   Input ~ 0
+col0
+Text GLabel 3050 1150 0    50   Input ~ 0
+col1
+Text GLabel 3050 1050 0    50   Input ~ 0
+col2
+Text GLabel 3050 1350 0    50   Input ~ 0
+row0
+Text GLabel 3050 1450 0    50   Input ~ 0
+row1
+Text GLabel 3050 1550 0    50   Input ~ 0
+row2
+Text GLabel 3050 1650 0    50   Input ~ 0
+row3
+Text GLabel 3050 1750 0    50   Input ~ 0
+row4
+NoConn ~ 4450 1650
+NoConn ~ 4450 1750
+NoConn ~ 2300 1850
+NoConn ~ 2300 1950
+$Comp
+L keebio:MX m1
+U 1 1 62DDDAEC
+P 4500 2500
+F 0 "m1" H 4500 2723 50  0000 C CNN
+F 1 "MX" H 4500 2200 60  0001 C CNN
+F 2 "" H 4500 2500 60  0001 C CNN
+F 3 "" H 4500 2500 60  0001 C CNN
+	1    4500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX m3
+U 1 1 62DDE706
+P 4500 3100
+F 0 "m3" H 4500 3323 50  0000 C CNN
+F 1 "MX" H 4500 2800 60  0001 C CNN
+F 2 "" H 4500 3100 60  0001 C CNN
+F 3 "" H 4500 3100 60  0001 C CNN
+	1    4500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX m2
+U 1 1 62DDF0E5
+P 5250 2500
+F 0 "m2" H 5250 2723 50  0000 C CNN
+F 1 "MX" H 5250 2200 60  0001 C CNN
+F 2 "" H 5250 2500 60  0001 C CNN
+F 3 "" H 5250 2500 60  0001 C CNN
+	1    5250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX Esc
+U 1 1 62DE1E68
+P 6000 2500
+F 0 "Esc" H 6000 2723 50  0000 C CNN
+F 1 "MX" H 6000 2200 60  0001 C CNN
+F 2 "" H 6000 2500 60  0001 C CNN
+F 3 "" H 6000 2500 60  0001 C CNN
+	1    6000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX m4
+U 1 1 62DE2515
+P 6000 3100
+F 0 "m4" H 6000 3323 50  0000 C CNN
+F 1 "MX" H 6000 2800 60  0001 C CNN
+F 2 "" H 6000 3100 60  0001 C CNN
+F 3 "" H 6000 3100 60  0001 C CNN
+	1    6000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX M5
+U 1 1 62DFF2E9
+P 6000 3700
+F 0 "M5" H 6000 3923 50  0000 C CNN
+F 1 "MX" H 6000 3400 60  0001 C CNN
+F 2 "" H 6000 3700 60  0001 C CNN
+F 3 "" H 6000 3700 60  0001 C CNN
+	1    6000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX lFn
+U 1 1 62DFF984
+P 6000 4300
+F 0 "lFn" H 6000 4523 50  0000 C CNN
+F 1 "MX" H 6000 4000 60  0001 C CNN
+F 2 "" H 6000 4300 60  0001 C CNN
+F 3 "" H 6000 4300 60  0001 C CNN
+	1    6000 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX Grave
+U 1 1 62E1A843
+P 6750 2500
+F 0 "Grave" H 6750 2723 50  0000 C CNN
+F 1 "MX" H 6750 2200 60  0001 C CNN
+F 2 "" H 6750 2500 60  0001 C CNN
+F 3 "" H 6750 2500 60  0001 C CNN
+	1    6750 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX Tab
+U 1 1 62E1A95D
+P 6750 3100
+F 0 "Tab" H 6750 3323 50  0000 C CNN
+F 1 "MX" H 6750 2800 60  0001 C CNN
+F 2 "" H 6750 3100 60  0001 C CNN
+F 3 "" H 6750 3100 60  0001 C CNN
+	1    6750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX Caps
+U 1 1 62E1A967
+P 6750 3700
+F 0 "Caps" H 6750 3923 50  0000 C CNN
+F 1 "MX" H 6750 3400 60  0001 C CNN
+F 2 "" H 6750 3700 60  0001 C CNN
+F 3 "" H 6750 3700 60  0001 C CNN
+	1    6750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX Shift
+U 1 1 62E1A971
+P 6750 4300
+F 0 "Shift" H 6750 4523 50  0000 C CNN
+F 1 "MX" H 6750 4000 60  0001 C CNN
+F 2 "" H 6750 4300 60  0001 C CNN
+F 3 "" H 6750 4300 60  0001 C CNN
+	1    6750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX Del
+U 1 1 62E1CC61
+P 6750 4900
+F 0 "Del" H 6750 5123 50  0000 C CNN
+F 1 "MX" H 6750 4600 60  0001 C CNN
+F 2 "" H 6750 4900 60  0001 C CNN
+F 3 "" H 6750 4900 60  0001 C CNN
+	1    6750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX !1
+U 1 1 62E1F8DB
+P 7500 2500
+F 0 "!1" H 7500 2723 50  0000 C CNN
+F 1 "MX" H 7500 2200 60  0001 C CNN
+F 2 "" H 7500 2500 60  0001 C CNN
+F 3 "" H 7500 2500 60  0001 C CNN
+	1    7500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX Q
+U 1 1 62E1FA77
+P 7500 3100
+F 0 "Q" H 7500 3323 50  0000 C CNN
+F 1 "MX" H 7500 2800 60  0001 C CNN
+F 2 "" H 7500 3100 60  0001 C CNN
+F 3 "" H 7500 3100 60  0001 C CNN
+	1    7500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX A
+U 1 1 62E1FA81
+P 7500 3700
+F 0 "A" H 7500 3923 50  0000 C CNN
+F 1 "MX" H 7500 3400 60  0001 C CNN
+F 2 "" H 7500 3700 60  0001 C CNN
+F 3 "" H 7500 3700 60  0001 C CNN
+	1    7500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX Z
+U 1 1 62E1FA8B
+P 7500 4300
+F 0 "Z" H 7500 4523 50  0000 C CNN
+F 1 "MX" H 7500 4000 60  0001 C CNN
+F 2 "" H 7500 4300 60  0001 C CNN
+F 3 "" H 7500 4300 60  0001 C CNN
+	1    7500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX lCtrl
+U 1 1 62E1FA95
+P 7500 4900
+F 0 "lCtrl" H 7500 5123 50  0000 C CNN
+F 1 "MX" H 7500 4600 60  0001 C CNN
+F 2 "" H 7500 4900 60  0001 C CNN
+F 3 "" H 7500 4900 60  0001 C CNN
+	1    7500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX @2
+U 1 1 62E23FD1
+P 8250 2500
+F 0 "@2" H 8250 2723 50  0000 C CNN
+F 1 "MX" H 8250 2200 60  0001 C CNN
+F 2 "" H 8250 2500 60  0001 C CNN
+F 3 "" H 8250 2500 60  0001 C CNN
+	1    8250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX W
+U 1 1 62E242C3
+P 8250 3100
+F 0 "W" H 8250 3323 50  0000 C CNN
+F 1 "MX" H 8250 2800 60  0001 C CNN
+F 2 "" H 8250 3100 60  0001 C CNN
+F 3 "" H 8250 3100 60  0001 C CNN
+	1    8250 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX S
+U 1 1 62E242CD
+P 8250 3700
+F 0 "S" H 8250 3923 50  0000 C CNN
+F 1 "MX" H 8250 3400 60  0001 C CNN
+F 2 "" H 8250 3700 60  0001 C CNN
+F 3 "" H 8250 3700 60  0001 C CNN
+	1    8250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX X
+U 1 1 62E242D7
+P 8250 4300
+F 0 "X" H 8250 4523 50  0000 C CNN
+F 1 "MX" H 8250 4000 60  0001 C CNN
+F 2 "" H 8250 4300 60  0001 C CNN
+F 3 "" H 8250 4300 60  0001 C CNN
+	1    8250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX lWin
+U 1 1 62E242E1
+P 8250 4900
+F 0 "lWin" H 8250 5123 50  0000 C CNN
+F 1 "MX" H 8250 4600 60  0001 C CNN
+F 2 "" H 8250 4900 60  0001 C CNN
+F 3 "" H 8250 4900 60  0001 C CNN
+	1    8250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX #3
+U 1 1 62E297FC
+P 9000 2500
+F 0 "#3" H 9000 2723 50  0000 C CNN
+F 1 "MX" H 9000 2200 60  0001 C CNN
+F 2 "" H 9000 2500 60  0001 C CNN
+F 3 "" H 9000 2500 60  0001 C CNN
+	1    9000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX E
+U 1 1 62E29A9C
+P 9000 3100
+F 0 "E" H 9000 3323 50  0000 C CNN
+F 1 "MX" H 9000 2800 60  0001 C CNN
+F 2 "" H 9000 3100 60  0001 C CNN
+F 3 "" H 9000 3100 60  0001 C CNN
+	1    9000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX D
+U 1 1 62E29AA6
+P 9000 3700
+F 0 "D" H 9000 3923 50  0000 C CNN
+F 1 "MX" H 9000 3400 60  0001 C CNN
+F 2 "" H 9000 3700 60  0001 C CNN
+F 3 "" H 9000 3700 60  0001 C CNN
+	1    9000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX C
+U 1 1 62E29AB0
+P 9000 4300
+F 0 "C" H 9000 4523 50  0000 C CNN
+F 1 "MX" H 9000 4000 60  0001 C CNN
+F 2 "" H 9000 4300 60  0001 C CNN
+F 3 "" H 9000 4300 60  0001 C CNN
+	1    9000 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX lAlt
+U 1 1 62E29ABA
+P 9000 4900
+F 0 "lAlt" H 9000 5123 50  0000 C CNN
+F 1 "MX" H 9000 4600 60  0001 C CNN
+F 2 "" H 9000 4900 60  0001 C CNN
+F 3 "" H 9000 4900 60  0001 C CNN
+	1    9000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX $4
+U 1 1 62E323D9
+P 9750 2500
+F 0 "$4" H 9750 2723 50  0000 C CNN
+F 1 "MX" H 9750 2200 60  0001 C CNN
+F 2 "" H 9750 2500 60  0001 C CNN
+F 3 "" H 9750 2500 60  0001 C CNN
+	1    9750 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX R
+U 1 1 62E326FD
+P 9750 3100
+F 0 "R" H 9750 3323 50  0000 C CNN
+F 1 "MX" H 9750 2800 60  0001 C CNN
+F 2 "" H 9750 3100 60  0001 C CNN
+F 3 "" H 9750 3100 60  0001 C CNN
+	1    9750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX F
+U 1 1 62E32707
+P 9750 3700
+F 0 "F" H 9750 3923 50  0000 C CNN
+F 1 "MX" H 9750 3400 60  0001 C CNN
+F 2 "" H 9750 3700 60  0001 C CNN
+F 3 "" H 9750 3700 60  0001 C CNN
+	1    9750 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX V
+U 1 1 62E32711
+P 9750 4300
+F 0 "V" H 9750 4523 50  0000 C CNN
+F 1 "MX" H 9750 4000 60  0001 C CNN
+F 2 "" H 9750 4300 60  0001 C CNN
+F 3 "" H 9750 4300 60  0001 C CNN
+	1    9750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX lShift
+U 1 1 62E3271B
+P 9750 4900
+F 0 "lShift" H 9750 5123 50  0000 C CNN
+F 1 "MX" H 9750 4600 60  0001 C CNN
+F 2 "" H 9750 4900 60  0001 C CNN
+F 3 "" H 9750 4900 60  0001 C CNN
+	1    9750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX %5
+U 1 1 62E57206
+P 10500 2500
+F 0 "%5" H 10500 2723 50  0000 C CNN
+F 1 "MX" H 10500 2200 60  0001 C CNN
+F 2 "" H 10500 2500 60  0001 C CNN
+F 3 "" H 10500 2500 60  0001 C CNN
+	1    10500 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX T
+U 1 1 62E57720
+P 10500 3100
+F 0 "T" H 10500 3323 50  0000 C CNN
+F 1 "MX" H 10500 2800 60  0001 C CNN
+F 2 "" H 10500 3100 60  0001 C CNN
+F 3 "" H 10500 3100 60  0001 C CNN
+	1    10500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX G
+U 1 1 62E5772A
+P 10500 3700
+F 0 "G" H 10500 3923 50  0000 C CNN
+F 1 "MX" H 10500 3400 60  0001 C CNN
+F 2 "" H 10500 3700 60  0001 C CNN
+F 3 "" H 10500 3700 60  0001 C CNN
+	1    10500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX B
+U 1 1 62E57734
+P 10500 4300
+F 0 "B" H 10500 4523 50  0000 C CNN
+F 1 "MX" H 10500 4000 60  0001 C CNN
+F 2 "" H 10500 4300 60  0001 C CNN
+F 3 "" H 10500 4300 60  0001 C CNN
+	1    10500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:MX lSpace
+U 1 1 62E5773E
+P 10500 4900
+F 0 "lSpace" H 10500 5123 50  0000 C CNN
+F 1 "MX" H 10500 4600 60  0001 C CNN
+F 2 "" H 10500 4900 60  0001 C CNN
+F 3 "" H 10500 4900 60  0001 C CNN
+	1    10500 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2800 4650 2700
+Wire Wire Line
+	4650 2800 5400 2800
+Wire Wire Line
+	5400 2800 5400 2700
+Wire Wire Line
+	5400 2800 6150 2800
+Wire Wire Line
+	6150 2800 6150 2700
+Connection ~ 5400 2800
+Wire Wire Line
+	6150 2800 6900 2800
+Wire Wire Line
+	6900 2800 6900 2700
+Connection ~ 6150 2800
+Wire Wire Line
+	6900 2800 7650 2800
+Wire Wire Line
+	7650 2800 7650 2700
+Connection ~ 6900 2800
+Wire Wire Line
+	7650 2800 8400 2800
+Wire Wire Line
+	8400 2800 8400 2700
+Connection ~ 7650 2800
+Wire Wire Line
+	8400 2800 9150 2800
+Wire Wire Line
+	9150 2800 9150 2700
+Connection ~ 8400 2800
+Wire Wire Line
+	9150 2800 9900 2800
+Wire Wire Line
+	9900 2800 9900 2700
+Connection ~ 9150 2800
+Wire Wire Line
+	9900 2800 10650 2800
+Wire Wire Line
+	10650 2800 10650 2700
+Connection ~ 9900 2800
+Text GLabel 10900 2800 2    50   Input ~ 0
+row0
+Wire Wire Line
+	10650 2800 10900 2800
+Connection ~ 10650 2800
+Text GLabel 10900 3400 2    50   Input ~ 0
+row1
+Text GLabel 10900 4000 2    50   Input ~ 0
+row2
+Text GLabel 10900 4600 2    50   Input ~ 0
+row3
+Text GLabel 10900 5200 2    50   Input ~ 0
+row4
+Wire Wire Line
+	10900 3400 10650 3400
+Wire Wire Line
+	10650 3400 10650 3300
+Wire Wire Line
+	10650 3400 9900 3400
+Wire Wire Line
+	9900 3400 9900 3300
+Connection ~ 10650 3400
+Wire Wire Line
+	9900 3400 9150 3400
+Wire Wire Line
+	9150 3400 9150 3300
+Connection ~ 9900 3400
+Wire Wire Line
+	9150 3400 8400 3400
+Wire Wire Line
+	8400 3400 8400 3300
+Connection ~ 9150 3400
+Wire Wire Line
+	8400 3400 7650 3400
+Wire Wire Line
+	7650 3400 7650 3300
+Connection ~ 8400 3400
+Wire Wire Line
+	7650 3400 6900 3400
+Wire Wire Line
+	6900 3400 6900 3300
+Connection ~ 7650 3400
+Wire Wire Line
+	6900 3400 6150 3400
+Wire Wire Line
+	6150 3400 6150 3300
+Connection ~ 6900 3400
+Wire Wire Line
+	6150 3400 4650 3400
+Wire Wire Line
+	4650 3400 4650 3300
+Connection ~ 6150 3400
+Wire Wire Line
+	10900 4000 10650 4000
+Wire Wire Line
+	10650 4000 10650 3900
+Wire Wire Line
+	10650 4000 9900 4000
+Wire Wire Line
+	9900 4000 9900 3900
+Connection ~ 10650 4000
+Wire Wire Line
+	9900 4000 9150 4000
+Wire Wire Line
+	9150 4000 9150 3900
+Connection ~ 9900 4000
+Wire Wire Line
+	9150 4000 8400 4000
+Wire Wire Line
+	8400 4000 8400 3900
+Connection ~ 9150 4000
+Wire Wire Line
+	8400 4000 7650 4000
+Wire Wire Line
+	7650 4000 7650 3900
+Connection ~ 8400 4000
+Wire Wire Line
+	7650 4000 6900 4000
+Wire Wire Line
+	6900 4000 6900 3900
+Connection ~ 7650 4000
+Wire Wire Line
+	6900 4000 6150 4000
+Wire Wire Line
+	6150 4000 6150 3900
+Connection ~ 6900 4000
+Wire Wire Line
+	10900 4600 10650 4600
+Wire Wire Line
+	10650 4600 10650 4500
+Wire Wire Line
+	10650 4600 9900 4600
+Wire Wire Line
+	9900 4600 9900 4500
+Connection ~ 10650 4600
+Wire Wire Line
+	9900 4600 9150 4600
+Wire Wire Line
+	9150 4600 9150 4500
+Connection ~ 9900 4600
+Wire Wire Line
+	9150 4600 8400 4600
+Wire Wire Line
+	8400 4600 8400 4500
+Connection ~ 9150 4600
+Wire Wire Line
+	8400 4600 7650 4600
+Wire Wire Line
+	7650 4600 7650 4500
+Connection ~ 8400 4600
+Wire Wire Line
+	7650 4600 6900 4600
+Wire Wire Line
+	6900 4600 6900 4500
+Connection ~ 7650 4600
+Wire Wire Line
+	6900 4600 6150 4600
+Wire Wire Line
+	6150 4600 6150 4500
+Connection ~ 6900 4600
+Wire Wire Line
+	10900 5200 10650 5200
+Wire Wire Line
+	10650 5200 10650 5100
+Wire Wire Line
+	10650 5200 9900 5200
+Wire Wire Line
+	9900 5200 9900 5100
+Connection ~ 10650 5200
+Wire Wire Line
+	9900 5200 9150 5200
+Wire Wire Line
+	9150 5200 9150 5100
+Connection ~ 9900 5200
+Wire Wire Line
+	9150 5200 8400 5200
+Wire Wire Line
+	8400 5200 8400 5100
+Connection ~ 9150 5200
+Wire Wire Line
+	8400 5200 7650 5200
+Wire Wire Line
+	7650 5200 7650 5100
+Connection ~ 8400 5200
+Wire Wire Line
+	7650 5200 6900 5200
+Wire Wire Line
+	6900 5200 6900 5100
+Connection ~ 7650 5200
+Wire Wire Line
+	4200 2500 4200 3100
+Wire Wire Line
+	5700 3100 5700 2500
+Wire Wire Line
+	5700 3100 5700 3700
+Connection ~ 5700 3100
+Connection ~ 5700 3700
+Wire Wire Line
+	5700 3700 5700 4300
+Wire Wire Line
+	6450 2500 6450 3100
+Connection ~ 6450 3100
+Wire Wire Line
+	6450 3100 6450 3700
+Connection ~ 6450 3700
+Wire Wire Line
+	6450 3700 6450 4300
+Connection ~ 6450 4300
+Wire Wire Line
+	6450 4300 6450 4900
+Wire Wire Line
+	7200 2500 7200 3100
+Connection ~ 7200 3100
+Wire Wire Line
+	7200 3100 7200 3700
+Connection ~ 7200 3700
+Wire Wire Line
+	7200 3700 7200 4300
+Connection ~ 7200 4300
+Wire Wire Line
+	7200 4300 7200 4900
+Wire Wire Line
+	7950 4900 7950 4300
+Connection ~ 7950 3100
+Wire Wire Line
+	7950 3100 7950 2500
+Connection ~ 7950 3700
+Wire Wire Line
+	7950 3700 7950 3100
+Connection ~ 7950 4300
+Wire Wire Line
+	7950 4300 7950 3700
+Wire Wire Line
+	8700 2500 8700 3100
+Connection ~ 8700 3100
+Wire Wire Line
+	8700 3100 8700 3700
+Connection ~ 8700 3700
+Wire Wire Line
+	8700 3700 8700 4300
+Connection ~ 8700 4300
+Wire Wire Line
+	8700 4300 8700 4900
+Wire Wire Line
+	9450 2500 9450 3100
+Connection ~ 9450 3100
+Wire Wire Line
+	9450 3100 9450 3700
+Connection ~ 9450 3700
+Wire Wire Line
+	9450 3700 9450 4300
+Connection ~ 9450 4300
+Wire Wire Line
+	9450 4300 9450 4900
+Wire Wire Line
+	10200 2500 10200 3100
+Connection ~ 10200 3100
+Wire Wire Line
+	10200 3100 10200 3700
+Connection ~ 10200 3700
+Wire Wire Line
+	10200 3700 10200 4300
+Connection ~ 10200 4300
+Wire Wire Line
+	10200 4300 10200 4900
+$EndSCHEMATC

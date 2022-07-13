@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name keebio)(type Legacy)(uri /home/carlos/repos/personal_pcbs/keebio-components/keebio.lib)(options "")(descr ""))
+  (lib (name cga_proto_boards_top-rescue)(type Legacy)(uri ${KIPRJMOD}/iVi_top-rescue.lib)(options "")(descr ""))
+  (lib (name cga_proto_boards-rescue)(type Legacy)(uri ${KIPRJMOD}/iVi-rescue.lib)(options "")(descr ""))
+  (lib (name MX_Alps_Hybrid)(type Legacy)(uri "/home/carlos/repos/personal_pcbs/MX_Alps_Hybrid.pretty/Schematic Library/MX_Alps_Hybrid.lib")(options "")(descr ""))
+)
